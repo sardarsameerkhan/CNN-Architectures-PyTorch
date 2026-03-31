@@ -1,3 +1,15 @@
 # CNN-Architectures-PyTorch
 Deep Learning Architectures
-Implementation: PyTorchThis repository contains the implementation of classic Convolutional Neural Network (CNN) components, developed and tested on Kaggle.Contents1. LeNet-5 ImplementationA classic architecture for grayscale image classification ($32 \times 32$ input).Key Features: Conv layers, Average Pooling, and Fully Connected layers.Verification: Includes dynamic shape printing after every layer and a manual parameter counter function.Mathematical Check: Verified that the feature map size is $16 \times 5 \times 5 = 400$ before the flattening layer.2. Residual Block (ResNet)Implementation of a residual block with a projection shortcut.Key Features: 3x3 Convolutions, Batch Normalization, and ReLU activation.Logic: Uses an nn.Identity shortcut when dimensions match, and a $1 \times 1$ Convolutional shortcut when channels increase or spatial size decreases.Test Cases: * Input $(1, 64, 56, 56) \rightarrow$ Output $(1, 128, 28, 28)$Input $(1, 128, 28, 28) \rightarrow$ Output $(1, 128, 28, 28)$How to RunOpen the .ipynb file in Kaggle or Jupyter Notebook.Ensure torch and torchvision are installed.Run all cells to see the architecture shapes and mandatory timestamp/Roll# logs.
+Implementation: PyTorchThis repository contains the implementation of classic Convolutional Neural Network (CNN) components, developed and tested on Kaggle.Contents1. 
+LeNet-5 ImplementationA classic architecture for grayscale image classification ($32 \times 32$ input).
+Key Features: Conv layers, Average Pooling, and Fully Connected layers.
+Verification: Includes dynamic shape printing after every layer and a manual parameter counter function.
+Mathematical Check: Verified that the feature map size is $16 \times 5 \times 5 = 400$ before the flattening layer.2.
+Residual Block (ResNet)Implementation of a residual block with a projection shortcut.
+Key Features: 3x3 Convolutions, Batch Normalization, and ReLU activation.
+Logic: Uses an nn.Identity shortcut when dimensions match, and a $1 \times 1$ 
+Convolutional shortcut when channels increase or spatial size decreases.
+Test Cases: * Input $(1, 64, 56, 56) \rightarrow$ Output $(1, 128, 28, 28)$Input $(1, 128, 28, 28) \rightarrow$ Output $(1, 128, 28, 28)$
+
+Ensure torch and torchvision are installed.
+Run all cells to see the architecture shapes and mandatory timestamp/Roll# logs.
